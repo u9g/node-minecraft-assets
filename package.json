@@ -1,0 +1,27 @@
+{
+  "name": "minecraft-assets",
+  "version": "1.0.0",
+  "description": "Provide minecraft assets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "require-self"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rom1504/node-minecraft-assets.git"
+  },
+  "keywords": [
+    "minecraft",
+    "assets"
+  ],
+  "author": "Romain Beaumont <romain.rom1@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rom1504/node-minecraft-assets/issues"
+  },
+  "homepage": "https://github.com/rom1504/node-minecraft-assets#readme",
+  "devDependencies": {
+    "require-self": "^0.1.0"
+  }
+}
