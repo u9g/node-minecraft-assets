@@ -17,10 +17,12 @@ module.exports = function(mcVersion)
 var data={
   "1.8.8":{
     blocksTextures:require("./minecraft-assets/data/1.8.8/blocks_textures"),
-    itemsTextures:require("./minecraft-assets/data/1.8.8/items_textures")
+    itemsTextures:require("./minecraft-assets/data/1.8.8/items_textures"),
+    textureContent:require("./minecraft-assets/data/1.8.8/texture_content")
   },
   "1.9":{
     blocksTextures:require("./minecraft-assets/data/1.9/blocks_textures"),
-    itemsTextures:require("./minecraft-assets/data/1.9/items_textures")
+    itemsTextures:require("./minecraft-assets/data/1.9/items_textures"),
+    textureContent:require("./minecraft-assets/data/1.9/texture_content")
   }
 };
