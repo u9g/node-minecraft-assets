@@ -1,3 +1,7 @@
+## 1.1.1
+
+* fix release
+
 ## 1.1.0
 
 * update mcassets, bring 1.13 support
