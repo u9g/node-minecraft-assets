@@ -24,5 +24,25 @@ var data={
     blocksTextures:require("./minecraft-assets/data/1.9/blocks_textures"),
     itemsTextures:require("./minecraft-assets/data/1.9/items_textures"),
     textureContent:require("./minecraft-assets/data/1.9/texture_content")
+  },
+  "1.10":{
+    blocksTextures:require("./minecraft-assets/data/1.10/blocks_textures"),
+    itemsTextures:require("./minecraft-assets/data/1.10/items_textures"),
+    textureContent:require("./minecraft-assets/data/1.10/texture_content")
+  },
+  "1.11.2":{
+    blocksTextures:require("./minecraft-assets/data/1.11.2/blocks_textures"),
+    itemsTextures:require("./minecraft-assets/data/1.11.2/items_textures"),
+    textureContent:require("./minecraft-assets/data/1.11.2/texture_content")
+  },
+  "1.12":{
+    blocksTextures:require("./minecraft-assets/data/1.12/blocks_textures"),
+    itemsTextures:require("./minecraft-assets/data/1.12/items_textures"),
+    textureContent:require("./minecraft-assets/data/1.12/texture_content")
+  },
+  "1.13":{
+    blocksTextures:require("./minecraft-assets/data/1.13/blocks_textures"),
+    itemsTextures:require("./minecraft-assets/data/1.13/items_textures"),
+    textureContent:require("./minecraft-assets/data/1.13/texture_content")
   }
 };
