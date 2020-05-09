@@ -1,3 +1,7 @@
+## 1.2.0
+
+* 1.14 and 1.15 support
+
 ## 1.1.2
 
 * improve 1.13 data
