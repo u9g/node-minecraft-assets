@@ -40,5 +40,15 @@ const data = {
     blocksTextures: require('./minecraft-assets/data/1.13/blocks_textures'),
     itemsTextures: require('./minecraft-assets/data/1.13/items_textures'),
     textureContent: require('./minecraft-assets/data/1.13/texture_content')
+  },
+  '1.14.4': {
+    blocksTextures: require('./minecraft-assets/data/1.14.4/blocks_textures'),
+    itemsTextures: require('./minecraft-assets/data/1.14.4/items_textures'),
+    textureContent: require('./minecraft-assets/data/1.14.4/texture_content')
+  },
+  '1.15.2': {
+    blocksTextures: require('./minecraft-assets/data/1.15.2/blocks_textures'),
+    itemsTextures: require('./minecraft-assets/data/1.15.2/items_textures'),
+    textureContent: require('./minecraft-assets/data/1.15.2/texture_content')
   }
 }
