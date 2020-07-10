@@ -11,7 +11,7 @@ module.exports = function (mcVersion) {
 }
 
 const data = {
-  '1.8.8': {
+  1.8: {
     blocksTextures: require('./minecraft-assets/data/1.8.8/blocks_textures'),
     itemsTextures: require('./minecraft-assets/data/1.8.8/items_textures'),
     textureContent: require('./minecraft-assets/data/1.8.8/texture_content')
@@ -26,7 +26,7 @@ const data = {
     itemsTextures: require('./minecraft-assets/data/1.10/items_textures'),
     textureContent: require('./minecraft-assets/data/1.10/texture_content')
   },
-  '1.11.2': {
+  1.11: {
     blocksTextures: require('./minecraft-assets/data/1.11.2/blocks_textures'),
     itemsTextures: require('./minecraft-assets/data/1.11.2/items_textures'),
     textureContent: require('./minecraft-assets/data/1.11.2/texture_content')
@@ -41,12 +41,12 @@ const data = {
     itemsTextures: require('./minecraft-assets/data/1.13/items_textures'),
     textureContent: require('./minecraft-assets/data/1.13/texture_content')
   },
-  '1.14.4': {
+  1.14: {
     blocksTextures: require('./minecraft-assets/data/1.14.4/blocks_textures'),
     itemsTextures: require('./minecraft-assets/data/1.14.4/items_textures'),
     textureContent: require('./minecraft-assets/data/1.14.4/texture_content')
   },
-  '1.15.2': {
+  1.15: {
     blocksTextures: require('./minecraft-assets/data/1.15.2/blocks_textures'),
     itemsTextures: require('./minecraft-assets/data/1.15.2/items_textures'),
     textureContent: require('./minecraft-assets/data/1.15.2/texture_content')
