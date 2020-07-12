@@ -1,6 +1,6 @@
 {
   "name": "minecraft-assets",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Provide minecraft assets",
   "main": "index.js",
   "tonicExampleFilename": "example.js",
@@ -8,7 +8,7 @@
     "test": "npm run lint",
     "lint": "standard",
     "fix": "standard --fix",
-    "prepublish": "require-self"
+    "prepare": "npm install require-self && require-self"
   },
   "repository": {
     "type": "git",
