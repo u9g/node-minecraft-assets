@@ -1,7 +1,7 @@
 const mcDataToNode = require('./lib/loader')
 const cache = {} // prevent reindexing when requiring multiple time the same version
 
-module.exports = function (mcVersion) {
+function getVersion (mcVersion) {
   if (cache[mcVersion]) { return cache[mcVersion] }
   const mcData = data[mcVersion]
   if (mcData == null) { return null }
@@ -10,8 +10,27 @@ module.exports = function (mcVersion) {
   return nmcData
 }
 
+function toMajor (version) {
+  const [a, b] = (version + '').split('.')
+  return a + '.' + b
+}
+
+function minor (version) {
+  const [, , c] = (version + '.0').split('.')
+  return parseInt(c, 10)
+}
+
+module.exports = function (mcVersion) {
+  // Check exact version first
+  let assets = getVersion(mcVersion)
+  if (assets) { return assets }
+  // If not found, resort to the last of major
+  assets = getVersion(lastOfMajor[toMajor(mcVersion)])
+  return assets
+}
+
 const data = {
-  1.8: {
+  '1.8.8': {
     blocksTextures: require('./minecraft-assets/data/1.8.8/blocks_textures'),
     itemsTextures: require('./minecraft-assets/data/1.8.8/items_textures'),
     textureContent: require('./minecraft-assets/data/1.8.8/texture_content')
@@ -26,7 +45,7 @@ const data = {
     itemsTextures: require('./minecraft-assets/data/1.10/items_textures'),
     textureContent: require('./minecraft-assets/data/1.10/texture_content')
   },
-  1.11: {
+  '1.11.2': {
     blocksTextures: require('./minecraft-assets/data/1.11.2/blocks_textures'),
     itemsTextures: require('./minecraft-assets/data/1.11.2/items_textures'),
     textureContent: require('./minecraft-assets/data/1.11.2/texture_content')
@@ -41,12 +60,17 @@ const data = {
     itemsTextures: require('./minecraft-assets/data/1.13/items_textures'),
     textureContent: require('./minecraft-assets/data/1.13/texture_content')
   },
-  1.14: {
+  '1.13.2': {
+    blocksTextures: require('./minecraft-assets/data/1.13.2/blocks_textures'),
+    itemsTextures: require('./minecraft-assets/data/1.13.2/items_textures'),
+    textureContent: require('./minecraft-assets/data/1.13.2/texture_content')
+  },
+  '1.14.4': {
     blocksTextures: require('./minecraft-assets/data/1.14.4/blocks_textures'),
     itemsTextures: require('./minecraft-assets/data/1.14.4/items_textures'),
     textureContent: require('./minecraft-assets/data/1.14.4/texture_content')
   },
-  1.15: {
+  '1.15.2': {
     blocksTextures: require('./minecraft-assets/data/1.15.2/blocks_textures'),
     itemsTextures: require('./minecraft-assets/data/1.15.2/items_textures'),
     textureContent: require('./minecraft-assets/data/1.15.2/texture_content')
@@ -55,5 +79,17 @@ const data = {
     blocksTextures: require('./minecraft-assets/data/1.16.1/blocks_textures'),
     itemsTextures: require('./minecraft-assets/data/1.16.1/items_textures'),
     textureContent: require('./minecraft-assets/data/1.16.1/texture_content')
+  }
+}
+
+const lastOfMajor = {}
+for (const version in data) {
+  const major = toMajor(version)
+  if (lastOfMajor[major]) {
+    if (minor(lastOfMajor[major]) < minor(version)) {
+      lastOfMajor[major] = version
+    }
+  } else {
+    lastOfMajor[major] = version
   }
 }
