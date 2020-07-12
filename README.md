@@ -1,7 +1,11 @@
 # node-minecraft-assets
-[![NPM version](https://badge.fury.io/js/minecraft-assets.svg)](http://badge.fury.io/js/minecraft-assets)
-[![Tonic](https://img.shields.io/badge/tonic-try%20it-blue.svg)](https://tonicdev.com/npm/minecraft-assets)
-[![Build Status](https://circleci.com/gh/PrismarineJS/node-minecraft-assets/tree/master.svg?style=shield)](https://circleci.com/gh/PrismarineJS/node-minecraft-assets/tree/master)
+[![NPM version](https://img.shields.io/npm/v/minecraft-assets.svg)](http://npmjs.com/package/minecraft-assets)
+[![Build Status](https://github.com/PrismarineJS/node-minecraft-assets/workflows/CI/badge.svg)](https://github.com/PrismarineJS/node-minecraft-assets/actions?query=workflow%3A%22CI%22)
+[![Discord](https://img.shields.io/badge/chat-on%20discord-brightgreen.svg)](https://discord.gg/GsEFRM8)
+[![Gitter](https://img.shields.io/badge/chat-on%20gitter-brightgreen.svg)](https://gitter.im/PrismarineJS/general)
+[![Irc](https://img.shields.io/badge/chat-on%20irc-brightgreen.svg)](https://irc.gitter.im/)
+
+[![Try it on gitpod](https://img.shields.io/badge/try-on%20gitpod-brightgreen.svg)](https://gitpod.io/#https://github.com/PrismarineJS/node-minecraft-assets)
 
 Provide easy access to [minecraft-assets](https://github.com/rom1504/minecraft-assets) in node.js
 
