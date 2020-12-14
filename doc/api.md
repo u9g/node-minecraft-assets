@@ -30,6 +30,10 @@ texture content by name
 
 array of texture content
 
+## versions
+
+list of supported versions
+
 ## Functions
 
 ### findItemOrBlockByName(name)

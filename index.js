@@ -102,6 +102,8 @@ const data = {
   }
 }
 
+module.exports.versions = Object.keys(data)
+
 const lastOfMajor = {}
 for (const version in data) {
   const major = toMajor(version)
