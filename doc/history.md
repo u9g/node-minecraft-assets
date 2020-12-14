@@ -1,3 +1,6 @@
+## 1.4.0
+* expose supported versions
+
 ## 1.3.1
 * expose states and models
 
