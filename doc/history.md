@@ -1,3 +1,6 @@
+## 1.5.0
+* add 1.16.4
+
 ## 1.4.0
 * expose supported versions
 
