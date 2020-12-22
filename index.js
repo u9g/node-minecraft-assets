@@ -99,6 +99,13 @@ const data = {
     textureContent: require('./minecraft-assets/data/1.16.1/texture_content'),
     blocksStates: require('./minecraft-assets/data/1.16.1/blocks_states'),
     blocksModels: require('./minecraft-assets/data/1.16.1/blocks_models')
+  },
+  '1.16.4': {
+    blocksTextures: require('./minecraft-assets/data/1.16.4/blocks_textures'),
+    itemsTextures: require('./minecraft-assets/data/1.16.4/items_textures'),
+    textureContent: require('./minecraft-assets/data/1.16.4/texture_content'),
+    blocksStates: require('./minecraft-assets/data/1.16.4/blocks_states'),
+    blocksModels: require('./minecraft-assets/data/1.16.4/blocks_models')
   }
 }
 
