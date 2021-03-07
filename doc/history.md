@@ -1,3 +1,6 @@
+## 1.8.0
+* expose the version
+
 ## 1.7.0
 * update mcassets
 
