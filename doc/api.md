@@ -30,6 +30,10 @@ texture content by name
 
 array of texture content
 
+## version
+
+## directory
+
 ## versions
 
 list of supported versions
