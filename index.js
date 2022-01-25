@@ -113,6 +113,13 @@ const data = {
     textureContent: require('./minecraft-assets/data/1.17.1/texture_content'),
     blocksStates: require('./minecraft-assets/data/1.17.1/blocks_states'),
     blocksModels: require('./minecraft-assets/data/1.17.1/blocks_models')
+  },
+  '1.18.1': {
+    blocksTextures: require('./minecraft-assets/data/1.18.1/blocks_textures'),
+    itemsTextures: require('./minecraft-assets/data/1.18.1/items_textures'),
+    textureContent: require('./minecraft-assets/data/1.18.1/texture_content'),
+    blocksStates: require('./minecraft-assets/data/1.18.1/blocks_states'),
+    blocksModels: require('./minecraft-assets/data/1.18.1/blocks_models')
   }
 }
 
